@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFA1A1A1"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/post_border_style"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/box_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_background"
+            android:orientation="horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="4dp">
+
+
+            <LinearLayout
+                android:id="@+id/single_post_circuito_linearbox"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_margin="2dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imagenMensaje"
+                        android:src="@drawable/xhdpi_mnuevo"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="-4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Titulo"
+                        android:id="@+id/fila_et_titulo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Es la plaza principal de la ciudad de San Juan y es donde se encuentra el kilómetro 0 de la provincia."
+                        android:id="@+id/fila_et_cuerpo"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#6b6b6b" />
+
+                    <TextView
+                        android:layout_width="261dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de la actividad:"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/fila_et_factividad"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
